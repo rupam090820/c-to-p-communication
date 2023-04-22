@@ -1,0 +1,19 @@
+<p>child3 works!</p>
+<h3 style="background-color: antiquewhite;">BASIC FORM IN CHILD CLASS</h3>
+<div style=" background-color: azure; ">
+    <label>NAME:--</label><BR>
+    <input type="text" placeholder="enter your name" #n><br>
+    <label>COURSE:--</label><br>
+    <input type="text" placeholder="enter your course" #n1><br>
+    <label>FEES:--</label><br>
+    <input type="text" placeholder="enter your fees" #n2><br>
+    <!-- <label>GENDER:--</label><br>
+<input type="radio" name="radio" value="male" id="a2" #n3>MALE<br>
+<input type="radio" name="radio" id="a1" #n4 value="female">FEMALE<br> -->
+    <div class="form-group">
+        <label>gender &nbsp;&nbsp;</label>
+        <input type="radio" name="gender" value="male" #n3>male
+        <input type="radio" name="gender" value="female" #n4>female
+    </div>
+    <button class="btn btn-danger" (click)="send_data(n,n1,n2,n3,n4)">submit</button><br>
+    </div>

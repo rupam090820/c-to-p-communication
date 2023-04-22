@@ -1,0 +1,30 @@
+<div style=" background-color:cadetblue ">
+
+  <div *ngIf="revived_event !='' ">  <!-- this is a optional line  if we recive data from child then parent ui will display -->
+
+    <h4>it is a parrent component and here show the data which send child component....</h4>
+    <table class="table table-dark">
+      <thead>
+        <tr>
+
+          <th scope="col">NAME</th>
+          <th scope="col">COURSE</th>
+          <th scope="col">FEES</th>
+          <th scope="col">GENDER</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+
+          <td>{{revived_event.g1}}</td>
+          <td>{{revived_event.g2}}</td>
+          <td>{{revived_event.g4}}</td>
+          <td>{{revived_event.g5}}</td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div> <!-- this is a optional line  if we recive data from child then parent ui will display -->
+</div>
+
+<app-child3 (recived_data)="revived_event=$event"></app-child3>   <!-- step 8 :- here recived "recived_data event and this event store to "recived_event / and then decleare this recived_event into ts file / go to ts file -->
